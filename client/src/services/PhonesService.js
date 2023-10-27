@@ -3,16 +3,16 @@ export default {
   index(search) {
     return Api().get("phones");
   },
-  show(userId) {
+  show(phoneId) {
     return Api().get("phone/" + phoneId);
   },
-  post(user) {
+  post(phone) {
     return Api().post("phone", phone);
   },
-  put(user) {
+  put(phone) {
     return Api().put("phone/" + phone.id, phone);
   },
-  delete(user) {
+  delete(phone) {
     return Api().delete("phone/" + phone.id, phone);
-  }
+  },
 };
